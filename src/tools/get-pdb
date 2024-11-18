@@ -1,0 +1,5 @@
+#!/bin/bash
+
+PDBCODE=$1
+wget https://files.rcsb.org/download/${PDBCODE}.pdb
+mv ${PDBCODE}.pdb pdb_${PDBCODE}.pdb
