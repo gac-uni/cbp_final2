@@ -18,6 +18,6 @@ module load gromacs-2021.4
 
 cd $PBS_O_WORKDIR
 
-gmx grompp -f {{f_mdp}} -c {{f_conf}} -r {{f_restr}} -p {{f_topol}} {{f_index}} {{f_checkpoint}} -o {{f_out}}
+gmx grompp -f {{f_mdp}} -c {{f_conf}} {{f_restr}} -p {{f_topol}} {{f_index}} {{f_checkpoint}} -o {{f_out}}
 wait
 mpirun -np {{number_mpiprocs}} gmx_mpi mdrun -v -deffnm {{deffnm}} -maxh {{gmx_walltime}}

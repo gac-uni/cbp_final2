@@ -8,6 +8,6 @@ else
         echo name of the directory to get from :/toCluster, will not get subdirectories
     else 
         mkdir $1
-        scp giacomo.marcon@hpc2.unitn.it:toCluster/$1/* $1/
+        scp -r giacomo.marcon@hpc2.unitn.it:toCluster/$1/* $1/
     fi
 fi

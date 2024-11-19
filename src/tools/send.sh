@@ -7,6 +7,6 @@ else
     then
         echo name of the directory to send to :/toCluster/
     else 
-        scp -r $1/ giacomo.marcon@hpc2.unitn.it:toCluster/$1/
+        scp -r $1/ giacomo.marcon@hpc2.unitn.it:toCluster/$1
     fi
 fi
