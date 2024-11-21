@@ -1,17 +1,17 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (200530)
-;	On host: hpc-c11-node24.unitn.it
-;	At date: Tue Nov 19 17:41:25 2024
+;	On host: hpc-c11-node23.unitn.it
+;	At date: Tue Nov 19 18:44:19 2024
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2021.4 (-:
 ;	
 ;	Executable:   /apps/gromacs-2021.4/bin/gmx
 ;	Data prefix:  /apps/gromacs-2021.4
-;	Working dir:  /home/giacomo.marcon/toCluster/00_npt_restricted
+;	Working dir:  /home/giacomo.marcon/toCluster/00_npt
 ;	Command line:
-;	  gmx grompp -f step5_npt_restricted.mdp -c step4.1_equilibration.gro -r step4.1_equilibration.gro -p topol.top -n index.ndx -t step4.1_equilibration.cpt -o step5_npt_restricted.tpr
+;	  gmx grompp -f step5_production.mdp -c step5_npt_restricted.gro -p topol.top -n index.ndx -t step5_npt_restricted.cpt -o step5_production.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -24,8 +24,8 @@ define                   =
 integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
-dt                       = 0.001
-nsteps                   = 125000
+dt                       = 0.002
+nsteps                   = 10000000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
