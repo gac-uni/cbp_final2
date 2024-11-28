@@ -1,0 +1,47 @@
+Setting the LD random seed to -152273946
+
+Generated 2012 of the 2016 non-bonded parameter combinations
+
+Generated 1176 of the 2016 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'PROA'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'MTX'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'POT'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'CLA'
+
+turning H bonds into constraints...
+
+Excluding 2 bonded neighbours molecule type 'TIP3'
+
+turning H bonds into constraints...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 310 K
+
+Calculated rlist for 1x1 atom pair-list as 1.296 nm, buffer size 0.096 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.223 nm, buffer size 0.023 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+Reading Coordinates, Velocities and Box size from old trajectory
+
+Will read whole trajectory
+
+Using frame at t = 125 ps
+
+Starting time for run is 0 ps
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 60x60x60, spacing 0.119 0.119 0.119
+
+Estimate for the relative computational load of the PME mesh part: 0.21
+
+This run will generate roughly 4 Mb of data

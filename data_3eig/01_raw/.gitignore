@@ -1,0 +1,4 @@
+03_MD_prod
+*.dcd
+*.xtc
+!.gitignore
