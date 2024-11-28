@@ -1,0 +1,289 @@
+                      :-) GROMACS - gmx grompp, 2021.4 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.4
+Executable:   /apps/gromacs-2021.4/bin/gmx
+Data prefix:  /apps/gromacs-2021.4
+Working dir:  /home/giacomo.marcon/toCluster/03_npt_3
+Command line:
+  gmx grompp -f step5_production.mdp -c step5_prod_2.gro -p topol.top -n index.ndx -t step5_prod_3_prev.cpt -o step5_prod_3.tpr
+
+Generating 1-4 interactions: fudge = 1
+Number of degrees of freedom in T-Coupling group SOLU is 7529.00
+Number of degrees of freedom in T-Coupling group SOLV is 66531.00
+Last frame         -1 time 12108.160   
+
+Back Off! I just backed up step5_prod_3.tpr to ./#step5_prod_3.tpr.2#
+
+GROMACS reminds you: "It Costs Too Much If It Costs a Lot" (Magnapop)
+
+                      :-) GROMACS - gmx mdrun, 2021.4 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.4
+Executable:   /apps/gromacs-2021.4/bin/gmx_mpi
+Data prefix:  /apps/gromacs-2021.4
+Working dir:  /home/giacomo.marcon/toCluster/03_npt_3
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_prod_3 -maxh 5.9 -cpi
+
+Reading file step5_prod_3.tpr, VERSION 2021.4 (single precision)
+Changing nstlist from 20 to 80, rlist from 1.223 to 1.321
+
+Using 40 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'Title'
+10000000 steps,  20000.0 ps (continuing from step 6149600,  12299.2 ps).
+step 6149600, will finish Thu Jul  3 01:30:51 2025
+step 6149700, will finish Sun Apr 20 02:17:26 2025
+step 6149800, will finish Sat Apr 12 19:39:05 2025
+step 6149900, will finish Thu Apr 10 08:59:02 2025
+step 6150080: timed with pme grid 60 60 60, coulomb cutoff 1.200: 477012.0 M-cycles
+step 6150240: timed with pme grid 52 52 52, coulomb cutoff 1.366: 440097.9 M-cycles
+step 6150400: timed with pme grid 48 48 48, coulomb cutoff 1.479: 428549.5 M-cycles
+step 6150560: timed with pme grid 44 44 44, coulomb cutoff 1.614: 459263.4 M-cycles
+step 6150720: timed with pme grid 40 40 40, coulomb cutoff 1.775: 424666.7 M-cycles
+step 6150880: timed with pme grid 36 36 36, coulomb cutoff 1.973: 212997.9 M-cycles
+step 6150880: the maximum allowed grid scaling limits the PME load balancing to a coulomb cut-off of 1.973
+step 6151040: timed with pme grid 36 36 36, coulomb cutoff 1.973: 1218.3 M-cycles
+step 6151200: timed with pme grid 36 36 36, coulomb cutoff 1.973: 1145.4 M-cycles
+step 6151360: timed with pme grid 36 36 36, coulomb cutoff 1.973: 1158.9 M-cycles
+              optimal pme grid 36 36 36, coulomb cutoff 1.973
+step 6151500, will finish Thu Feb 20 06:54:37 2025
+imb F 15% pme/F 0.13 step 6151600, will finish Sat Feb 15 19:51:40 2025
+step 6151700, will finish Tue Feb 11 19:00:36 2025
+step 6151800, will finish Sat Feb  8 02:56:09 2025
+step 6151900, will finish Tue Feb  4 18:31:16 2025
+imb F 14% pme/F 0.13 step 6152000, will finish Sat Feb  1 16:48:39 2025
+step 6152100, will finish Wed Jan 29 20:59:04 2025
+step 6152200, will finish Mon Jan 27 06:22:39 2025
+step 6152300, will finish Fri Jan 24 20:25:30 2025
+imb F 12% pme/F 0.13 step 6152400, will finish Wed Jan 22 14:35:29 2025
+step 6152500, will finish Mon Jan 20 12:28:04 2025
+step 6152600, will finish Sat Jan 18 13:41:09 2025
+step 6152700, will finish Thu Jan 16 17:55:30 2025
+imb F 12% pme/F 0.13 step 6152800, will finish Wed Jan 15 00:53:42 2025
+step 6152900, will finish Mon Jan 13 10:20:50 2025
+step 6153000, will finish Sat Jan 11 22:04:07 2025
+step 6153100, will finish Fri Jan 10 11:51:48 2025
+imb F 16% pme/F 0.13 step 6153200, will finish Thu Jan  9 03:34:16 2025
+step 6153300, will finish Tue Jan  7 21:00:48 2025
+step 6153400, will finish Mon Jan  6 16:03:34 2025
+step 6153500, will finish Sun Jan  5 12:35:31 2025
+imb F 16% pme/F 0.12 step 6153600, will finish Sat Jan  4 10:30:16 2025
+step 6153700, will finish Fri Jan  3 09:41:12 2025
+step 6153800, will finish Thu Jan  2 10:02:55 2025
+step 6153900, will finish Wed Jan  1 11:30:31 2025
+imb F 14% pme/F 0.13 step 6154000, will finish Tue Dec 31 13:59:49 2024
+step 6154100, will finish Mon Dec 30 17:26:13 2024
+step 6154200, will finish Sun Dec 29 21:46:20 2024
+step 6154300, will finish Sun Dec 29 02:56:41 2024
+imb F 16% pme/F 0.12 step 6154400, will finish Sat Dec 28 08:54:20 2024
+step 6154500, will finish Fri Dec 27 15:35:57 2024
+step 6154600, will finish Thu Dec 26 22:58:58 2024
+step 6154700, will finish Thu Dec 26 07:00:53 2024
+imb F  9% pme/F 0.13 step 6154800, will finish Wed Dec 25 15:39:40 2024
+step 6154900, will finish Wed Dec 25 00:54:57 2024
+step 6155000, will finish Tue Dec 24 10:58:21 2024
+step 6155100, will finish Mon Dec 23 21:28:30 2024
+imb F 10% pme/F 0.12 step 6155200, will finish Mon Dec 23 08:23:11 2024
+step 6155300, will finish Sun Dec 22 19:38:33 2024
+step 6155400, will finish Sun Dec 22 07:20:22 2024
+step 6155500, will finish Sat Dec 21 19:27:10 2024
+imb F 10% pme/F 0.12 step 6155600, will finish Sat Dec 21 07:58:01 2024
+step 6155700, will finish Fri Dec 20 20:51:14 2024
+step 6155800, will finish Fri Dec 20 10:05:58 2024
+step 6155900, will finish Thu Dec 19 23:41:07 2024
+imb F  8% pme/F 0.12 step 6156000, will finish Thu Dec 19 13:35:54 2024
+step 6156100, will finish Thu Dec 19 03:49:13 2024
+step 6156200, will finish Wed Dec 18 18:20:55 2024
+step 6156300, will finish Wed Dec 18 09:09:10 2024
+imb F  9% pme/F 0.12 step 6156400, will finish Wed Dec 18 00:13:41 2024
+step 6156500, will finish Tue Dec 17 15:33:23 2024
+step 6156600, will finish Tue Dec 17 07:08:00 2024
+step 6156700, will finish Mon Dec 16 22:56:48 2024
+imb F  8% pme/F 0.12 step 6156800, will finish Mon Dec 16 14:59:21 2024
+step 6156900, will finish Mon Dec 16 07:14:58 2024
+step 6157000, will finish Sun Dec 15 23:43:09 2024
+step 6157100, will finish Sun Dec 15 16:23:18 2024
+imb F 16% pme/F 0.13 step 6157200, will finish Sun Dec 15 09:16:42 2024
+step 6157300, will finish Mon Dec 16 11:45:02 2024
+step 6157400, will finish Thu Dec 19 00:13:56 2024
+step 6157500, will finish Sat Dec 21 14:37:19 2024
+imb F  3% pme/F 2.25 step 6157600, will finish Tue Dec 24 02:34:45 2024
+step 6157700, will finish Thu Dec 26 16:07:47 2024
+step 6157800, will finish Sun Dec 29 03:11:02 2024
+step 6157900, will finish Tue Dec 31 09:36:50 2024
+imb F  6% pme/F 2.16 step 6158000, will finish Thu Jan  2 21:01:15 2025
+step 6158100, will finish Sun Jan  5 03:25:55 2025
+step 6158200, will finish Tue Jan  7 03:42:01 2025
+step 6158300, will finish Thu Jan  9 05:17:57 2025
+imb F  5% pme/F 2.10 step 6158400, will finish Sat Jan 11 09:20:07 2025
+step 6158500, will finish Mon Jan 13 08:52:15 2025
+step 6158600, will finish Wed Jan 15 07:54:50 2025
+step 6158700, will finish Fri Jan 17 04:23:59 2025
+imb F  5% pme/F 2.18 step 6158800, will finish Sun Jan 19 00:09:31 2025
+step 6158900, will finish Mon Jan 20 19:34:49 2025
+step 6159000, will finish Wed Jan 22 13:50:20 2025
+step 6159100, will finish Fri Jan 24 07:54:35 2025
+imb F  5% pme/F 2.14 step 6159200, will finish Sat Jan 25 23:52:55 2025
+step 6159300, will finish Mon Jan 27 15:37:12 2025
+step 6159400, will finish Wed Jan 29 07:22:07 2025
+step 6159500, will finish Thu Jan 30 20:43:24 2025
+imb F  4% pme/F 2.13 step 6159600, will finish Sat Feb  1 06:04:05 2025
+step 6159700, will finish Sun Feb  2 15:52:20 2025
+step 6159800, will finish Tue Feb  4 03:01:59 2025
+step 6159900, will finish Wed Feb  5 13:59:16 2025
+imb F  5% pme/F 2.12 step 6160000, will finish Thu Feb  6 23:56:13 2025
+step 6160100, will finish Sat Feb  8 12:20:26 2025
+step 6160200, will finish Sun Feb  9 19:27:04 2025
+step 6160300, will finish Tue Feb 11 03:34:39 2025
+imb F  3% pme/F 2.17 step 6160400, will finish Wed Feb 12 12:45:40 2025
+step 6160500, will finish Thu Feb 13 21:52:18 2025
+step 6160600, will finish Sat Feb 15 02:13:55 2025
+step 6160700, will finish Sun Feb 16 06:14:53 2025
+
+Step 6160720: Run time exceeded 5.841 hours, will terminate the run within 80 steps
+=>> PBS: job killed: walltime 21711 exceeded limit 21600
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+
+
+
+Received the second INT/TERM signal, stopping within 11 steps
+

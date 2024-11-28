@@ -3,7 +3,8 @@ import templates
 
 # associate template with relative dictionaries
 fillers = {
-    "t00_pbs.pbs": ["pbs_parameters", "gmx_grompp", "gmx_mdrun"]
+    "t_run_start.pbs": ["pbs_parameters", "gmx_grompp", "gmx_mdrun"],
+    "t_run_resume.pbs": ["pbs_parameters", "gmx_mdrun"]
 }
 
 def genTemplate(template_name, full_template_name_out, all_dicts):

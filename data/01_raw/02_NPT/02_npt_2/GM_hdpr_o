@@ -1,4 +1,4 @@
-Setting the LD random seed to -268963973
+Setting the LD random seed to -56644662
 
 Generated 900 of the 903 non-bonded parameter combinations
 
@@ -40,4 +40,4 @@ Using a fourier grid of 60x60x60, spacing 0.118 0.118 0.118
 
 Estimate for the relative computational load of the PME mesh part: 0.21
 
-This run will generate roughly 92 Mb of data
+This run will generate roughly 77 Mb of data
