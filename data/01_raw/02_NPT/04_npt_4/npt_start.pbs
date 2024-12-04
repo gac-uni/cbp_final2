@@ -1,10 +1,10 @@
 #!/bin/bash
-#PBS -l select=1:ncpus=40:mpiprocs=40:mem=30GB
+#PBS -l select=1:ncpus=25:mpiprocs=25:mem=20GB
 #PBS -l walltime=06:00:00
 #PBS -q short_cpuQ
-#PBS -N GM_hdpr
-#PBS -o GM_hdpr_o
-#PBS -e GM_hdpr_e
+#PBS -N GM_hdpr_mtx
+#PBS -o GM_hdpr_mtx_o
+#PBS -e GM_hdpr_mtx_e
 
 # This is a comment.
 # From the /home in the compute node we move to the
@@ -20,4 +20,4 @@ cd $PBS_O_WORKDIR
 
 gmx grompp -f step5_production.mdp -c step5_prod_3.gro  -p topol.top -n index.ndx -t step5_prod_3.cpt -o step5_prod_4.tpr
 wait
-mpirun -np 40 gmx_mpi mdrun -v -deffnm step5_prod_4 -maxh 5.9
+mpirun -np 25 gmx_mpi mdrun -v -deffnm step5_prod_4 -maxh 5.9

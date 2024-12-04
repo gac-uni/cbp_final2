@@ -1,0 +1,396 @@
+                      :-) GROMACS - gmx mdrun, 2021.4 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.4
+Executable:   /apps/gromacs-2021.4/bin/gmx_mpi
+Data prefix:  /apps/gromacs-2021.4
+Working dir:  /home/giacomo.marcon/toCluster/04_npt_4
+Command line:
+  gmx_mpi mdrun -v -s step5_prod_4.tpr -cpi step5_prod_4_prev.cpt -append -deffnm step5_prod_4 -maxh 0.05
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    24 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    1 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    2 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    3 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    4 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    5 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    6 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    7 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    8 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    9 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    10 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    11 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    12 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    13 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    14 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    15 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    16 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    17 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    18 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    19 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    20 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    21 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    22 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 714)
+Function:    std::tuple<gmx::StartingBehavior, std::unique_ptr<t_fileio, gmx::functor_wrapper<t_fileio, gmx::closeLogFile> > > gmx::handleRestart(bool, MPI_Comm, const gmx_multisim_t*, gmx::AppendingBehavior, int, t_filenm*)
+MPI rank:    23 (out of 25)
+
+Communication (parallel processing) problem:
+Another MPI rank encountered an exception
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2021.4
+Source file: src/gromacs/mdrunutility/handlerestart.cpp (line 426)
+Function:    void gmx::{anonymous}::checkOutputFile(t_fileio*, const gmx_file_position_t&)
+MPI rank:    0 (out of 25)
+
+Inconsistency in user input:
+Checksum wrong for 'step5_prod_4.log'. The file has been replaced or its
+contents have been modified. Cannot do appending because of this condition.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 10 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[hpc-c10-node01.unitn.it:02763] 24 more processes have sent help message help-mpi-api.txt / mpi-abort
+[hpc-c10-node01.unitn.it:02763] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
