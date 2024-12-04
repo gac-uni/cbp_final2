@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -l select=1:ncpus={{number_cpu}}:mpiprocs={{number_mpiprocs}}:mem={{memory_GB}}GB
+#PBS -l walltime={{pbs_walltime}}
+#PBS -q {{queue}}
+#PBS -N {{job_name}}_chain
+
+
+module load openmpi-3.0.0
+module load gromacs-2021.4
+
+cd $PBS_O_WORKDIR
+export OMP_NUM_THREADS=1
+
+
+mpirun -np {{number_mpiprocs}} gmx_mpi mdrun -s ./{{deffnm}}.tpr -cpi {{deffnm}}.cpt -maxh {{gmx_walltime}} -deffnm {{deffnm}} -append
+
