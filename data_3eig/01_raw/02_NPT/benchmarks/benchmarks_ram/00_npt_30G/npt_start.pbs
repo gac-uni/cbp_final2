@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=25:mpiprocs=25:mem=30GB
+#PBS -l walltime=00:10:00
+#PBS -q short_cpuQ
+#PBS -N GM_hdpr_mtx
+#PBS -o GM_hdpr_mtx_o
+#PBS -e GM_hdpr_mtx_e
+
+# This is a comment.
+# From the /home in the compute node we move to the
+# directory from which we launched the job
+# (and where you, hopefully, have your files)
+
+# Specify to use only one openmp thread per MPI proc
+export OMP_NUM_THREADS=1
+
+module load gromacs-2021.4
+
+cd $PBS_O_WORKDIR
+
+gmx grompp -f step5_production.mdp -c step5_restricted.gro  -p topol.top -n index.ndx -t step5_restricted.cpt -o step5_production.tpr
+wait
+mpirun -np 25 gmx_mpi mdrun -v -deffnm step5_production -maxh 0.16

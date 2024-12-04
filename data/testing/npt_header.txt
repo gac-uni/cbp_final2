@@ -1,0 +1,18 @@
+# This file was created Thu Nov 28 15:23:23 2024
+# Created by:
+#            :-) GROMACS - gmx rms, 2023.1-Ubuntu_2023.1_2ubuntu1 (-:
+# 
+# Executable:   /usr/bin/gmx
+# Data prefix:  /usr
+# Working dir:  /home/ngoc-huyen/cbp_final/data/testing
+# Command line:
+#   gmx rms -f prod_2.xtc -s struct_2.tpr -o npt.xvg
+# gmx rms is part of G R O M A C S:
+#
+# Gromacs Runs On Most of All Computer Systems
+#
+@    title "RMSD"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Protein after lsq fit to Protein"
