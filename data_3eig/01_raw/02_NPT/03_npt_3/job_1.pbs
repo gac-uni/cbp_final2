@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=25:mpiprocs=25:mem=20GB
+#PBS -l walltime=06:00:00
+#PBS -q short_cpuQ
+#PBS -N GM_hdpr_mtx
+
+
+module load openmpi-3.0.0
+module load gromacs-2021.4
+
+cd $PBS_O_WORKDIR
+export OMP_NUM_THREADS=1
+
+# modify maxh so that it is slightly shorter than walltime. maxh is in hours
+mpirun -np 25 gmx_mpi mdrun -s ./step5_prod_3.tpr -maxh 5.95 -deffnm step5_prod_3
