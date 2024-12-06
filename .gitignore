@@ -22,6 +22,7 @@ __pycache__/
 *.exe
 *.out
 *.app
+*:Zone.Identifier
 
 # Distribution / packaging
 .Python
