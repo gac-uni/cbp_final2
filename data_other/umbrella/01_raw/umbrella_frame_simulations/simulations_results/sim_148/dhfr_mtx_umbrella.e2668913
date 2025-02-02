@@ -1,0 +1,62 @@
+                      :-) GROMACS - gmx mdrun, 2021.4 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.4
+Executable:   /apps/gromacs-2021.4/bin/gmx_mpi
+Data prefix:  /apps/gromacs-2021.4
+Working dir:  /home/giacomo.marcon/toCluster/simulations_extra4/sim_148
+Command line:
+  gmx_mpi mdrun -s ./mdrun.tpr -cpi mdrun.cpt -px mdrun_pullx.xvg -pf mdrun_pullf.xvg -maxh 5.95 -deffnm mdrun
+
+Reading file ./mdrun.tpr, VERSION 2021.4 (single precision)
+Changing nstlist from 20 to 100, rlist from 1.422 to 1.537
+
+Using 20 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 1 OpenMP thread per MPI process
+
+starting mdrun 'Title'
+2500000 steps,   5000.0 ps (continuing from step 2500000,   5000.0 ps).
+
+Writing final coordinates.
+
+Back Off! I just backed up mdrun.gro to ./#mdrun.gro.1#
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        4.416        0.225     1967.0
+                 (ns/day)    (hour/ns)
+Performance:        0.770       31.182
+
+GROMACS reminds you: "You could give Aristotle a tutorial. And you could thrill him to the core of his being. Such is the privilege of living after Newton, Darwin, Einstein, Planck, Watson, Crick and their colleagues." (Richard Dawkins)
+

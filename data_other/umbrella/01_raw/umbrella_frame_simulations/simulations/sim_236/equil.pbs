@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=20:mpiprocs=20:mem=20GB
+#PBS -l walltime=06:00:00
+#PBS -q short_cpuQ
+#PBS -N dhfr_mtx_umbrella
+
+
+module load openmpi-3.0.0
+module load gromacs-2021.4
+
+cd $PBS_O_WORKDIR
+export OMP_NUM_THREADS=1
+
+# modify maxh so that it is slightly shorter than walltime. maxh is in hours
+gmx grompp -f npt_umbrella.mdp -c conf236.gro -p topol.top -r conf236.gro -n index.ndx -maxwarn 1 -o equil.tpr
+mpirun -np 20 gmx_mpi mdrun -s ./equil.tpr -maxh 5.95 -deffnm equil
