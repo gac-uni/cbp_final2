@@ -95,16 +95,11 @@ target/
 *.trr
 *.lammpstrj
 
+*.tpr
+
 # IPython NB Checkpoints
 .ipynb_checkpoints/
 
-# 
-data_other/umbrella/charmm-gui-3521863678/01_raw/gromacs/umbrella_frame_simulations/simulations_extra
-data_other/umbrella/charmm-gui-3521863678/01_raw/gromacs/umbrella_frame_simulations/simulations_extra2
-data_other/umbrella/charmm-gui-3521863678/01_raw/gromacs/umbrella_frame_simulations/simulations_extra3
-data_other/umbrella/charmm-gui-3521863678/01_raw/gromacs/umbrella_frame_simulations/simulations_extra4
-data_other/umbrella/charmm-gui-3521863678/01_raw/gromacs/umbrella_frame_simulations/simulations
-data_other/umbrella/charmm-gui-3521863678/01_raw/gromacs/umbrella_frame_simulations/simulations_old
-data_other/umbrella/charmm-gui-3521863678/01_raw/gromacs/pulling
-
 git-filter-repo
+.tgz
+charmm-gui
